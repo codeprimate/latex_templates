@@ -1,0 +1,134 @@
+\documentclass{article}
+\usepackage{multicol}
+\usepackage{lipsum}
+
+% For graphics
+\usepackage{graphicx}
+%%
+
+% For footers
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\fancyfoot[C]{\large{\thepage}/\small{\pageref{LastPage}}}
+%%
+
+% For tables
+\usepackage{array}
+\usepackage{booktabs}
+%%
+
+% Use xelatex for font support
+ \usepackage{fontspec}
+ \setmainfont[Scale=1.2]{Doves Type}
+%%
+
+% For Drop caps
+\usepackage{lettrine}
+%%
+
+\title{Proposal Template}
+\author{Your Name}
+\date{\today} % Optional
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+\begin{description}
+    \item[Problem Statement:] Clearly define the problem or opportunity that this feature aims to address.
+    \item[Goal:] State the overarching goal of the feature proposal.
+\end{description}
+
+\section{Background}
+\begin{description}
+    \item[Context:] Provide context about the existing system, its users, and their needs.
+    \item[Existing Solutions:] Briefly discuss any current solutions or workarounds.
+\end{description}
+
+\section{Feature Description}
+\begin{description}
+    \item[Feature Functionality:] Explain what the feature will do and how it addresses the problem.
+    \item[User Experience:] Describe the intended user experience or interface changes.
+\end{description}
+
+\section{Technical Implementation}
+\begin{description}
+    \item[Technical Overview:] Provide a high-level technical overview of the proposed implementation.
+    \item[Code Examples:] Include idiomatic code examples, especially related to Ruby on Rails, to illustrate how the feature will be implemented.
+    \item[Architecture Diagrams:] If applicable, include architectural diagrams to illustrate the system's structure with the new feature.
+\end{description}
+
+\section{Testing and Quality Assurance}
+\begin{description}
+    \item[Testing Plan:] Outline the testing strategy, including unit tests, integration tests, and user acceptance testing.
+    \item[Error Handling:] Detail how potential error conditions will be handled, emphasizing your focus on production code quality.
+\end{description}
+
+\section{Impact Assessment}
+\begin{description}
+    \item[Potential Impacts:] Discuss the potential positive and negative impacts of the feature on the system, users, and organization.
+    \item[Alignment with Goals:] Explain how the feature aligns with the organization's long-term goals and strategies.
+\end{description}
+
+\section{Prioritization}
+\begin{description}
+    \item[MoSCoW Method:] Prioritize the feature's importance using the Must have, Should have, Could have, Won't have method or other relevant criteria.
+\end{description}
+
+\section{Conclusion}
+\begin{description}
+    \item[Summary:] Recap the key points of the proposal.
+    \item[Recommendation:] Provide a clear recommendation on whether the feature should be pursued.
+\end{description}
+
+\section{Review and Approval}
+\begin{description}
+    \item[Stakeholder Review:] Mention the stakeholders and teams that should review and approve the proposal.
+    \item[Sign-Off:] Describe the approval process and the expected sign-off.
+\end{description}
+
+\section{Implementation}
+\begin{description}
+    \item[Implementation Plan:] Outline how the feature will be developed, tested, and deployed.
+\end{description}
+
+\section{Deployment}
+\begin{description}
+    \item[Deployment Plan:] Explain the controlled deployment process, including monitoring and rollback plans.
+\end{description}
+
+\section{Documentation}
+\begin{description}
+    \item[User Documentation:] Describe the documentation needs for end-users.
+    \item[Internal Documentation:] Specify the documentation for developers and maintainers.
+\end{description}
+
+\section{Post-Deployment Analysis}
+\begin{description}
+    \item[Performance Evaluation:] Discuss how the feature's performance will be assessed post-deployment.
+    \item[User Feedback:] Consider how user feedback will be collected and analyzed.
+    \item[Adjustments:] Mention how any necessary adjustments will be made based on post-deployment analysis.
+\end{description}
+
+\section{Continuous Improvement}
+\begin{description}
+    \item[Learning and Future Iterations:] Emphasize how insights from post-deployment analysis will inform future feature proposals and product development.
+\end{description}
+
+% Vertical fill between pages
+\vspace*{\fill}
+\hrulefill
+\vspace*{\fill}
+
+\newpage 
+
+\tableofcontents
+\addcontentsline{toc}{section}{List of Tables}
+\addcontentsline{toc}{section}{List of Figures}
+
+\listoftables
+\listoffigures
+
+\end{document}

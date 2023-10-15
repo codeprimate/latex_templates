@@ -1,0 +1,8 @@
+*.aux
+*.gz
+*.lof
+*.log
+*.lot
+*.pdf
+*.toc
+.DS_Store
