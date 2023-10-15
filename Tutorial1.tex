@@ -1,0 +1,191 @@
+\documentclass{article}
+\usepackage{multicol}
+\usepackage{lipsum}
+
+% For graphics
+\usepackage{graphicx}
+%%
+
+% For footers
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\fancyfoot[C]{\large{\thepage}/\small{\pageref{LastPage}}}
+%%
+
+% For tables
+\usepackage{array}
+\usepackage{booktabs}
+%%
+
+% Use xelatex for font support
+% \usepackage{fontspec}
+% \setmainfont[Scale=1.2]{Doves Type}
+%%
+
+% For Drop caps
+\usepackage{lettrine}
+%%
+
+\title{My Article Title}
+\author{Your Name}
+\date{\today} % Optional
+
+\begin{document}
+
+\maketitle
+
+
+
+\section{Text Formatting Examples}
+
+\subsection{Font Styles}
+
+This is \textbf{bold} text. This is \textit{italic} text. This is \underline{underlined} text. This is \texttt{monospace} text.
+
+\subsection{Font Sizes}
+
+This text is normal.
+\tiny{This text is tiny.} 
+\small{This text is small.} 
+\large{This text is large.} 
+\huge{This text is huge.}
+\normalsize
+
+\subsection{Lists}
+
+\begin{itemize}
+  \item Item 1
+  \item Item 2
+\end{itemize}
+
+\begin{enumerate}
+  \item First item
+  \item Second item
+\end{enumerate}
+
+\begin{description}
+  \item[Label 1] Description 1
+  \item[Label 2] Description 2 \\
+  Curabitur vulputate eget metus non aliquam. Praesent vel odio quis nisi suscipit tincidunt. Donec eu risus ac nunc accumsan sagittis.
+  \item[Label 3] Description 3
+  	\begin{enumerate}
+  		\item First item
+  		\item Second item
+	\end{enumerate}
+\end{description}
+
+\subsection{Emphasis}
+
+This is \emph{emphasized} text.
+
+\subsection{Alignment}
+
+\begin{center}
+  This text is centered.
+\end{center}
+
+\begin{flushleft}
+  This text is left-aligned.
+\end{flushleft}
+
+\begin{flushright}
+  This text is right-aligned.
+\end{flushright}
+
+\subsection{Quotes}
+
+This is 'single' quotes. This is ``double'' quotes.
+
+% Start a new page for the next section
+\vspace*{\fill}
+\hrulefill
+\vspace*{\fill}
+\newpage 
+
+
+\section{Layout Examples}
+
+\subsection{Drop Caps}
+
+\lettrine[lines=2,loversize=0.2]{L}{orem} ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem. Nulla et lectus vestibulum urna fringilla ultri.
+
+\subsection{Tables}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Item 1 & Item 2 \\
+\hline
+A & B \\
+C & D \\
+\hline
+\end{tabular}
+\caption{A Simple Table}
+\end{table}
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{lccr}
+    \toprule
+    \textbf{Item} & \textbf{Quantity} & \textbf{Unit Price (\$)} & \textbf{Total (\$)} \\
+    \midrule
+    Apples        & 10                & 0.50                     & 5.00               \\
+    Bananas       & 15                & 0.30                     & 4.50               \\
+    Oranges       & 8                 & 0.40                     & 3.20               \\
+    Grapes        & 5                 & 0.60                     & 3.00               \\
+    \midrule
+    \multicolumn{3}{r}{\textbf{Subtotal}}                            & 15.70              \\
+    \multicolumn{3}{r}{Tax (7\%)}                                    & 1.10               \\
+    \midrule
+    \multicolumn{3}{r}{\textbf{Total}}                               & 16.80              \\
+    \bottomrule
+  \end{tabular}
+  \caption{An Extensive Table Example}
+\end{table}
+
+\subsection{Columns}
+
+\begin{multicols}{2}
+\lipsum[1]
+% \columnbreak % Break into two equal columns
+\end{multicols}
+
+\subsection{Figures}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.6\linewidth]{Tutorial1-example1.png} % Replace with your image file
+  \caption{This is a sample figure with a caption.}
+  \label{fig:sample}
+\end{figure}
+
+\subsection{Quotes}
+
+\begin{quote}
+This is a block quote. It is typically indented and used for longer quoted text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+\begin{flushright}
+- Author's Name, \textit{Book Title}
+\end{flushright}
+\end{quote}
+
+\subsection{Footnotes}
+ In LaTeX, you can create a footnote using the \texttt{\textbackslash footnote} command.\footnote{This is an example footnote.} Footnotes are a useful way to add additional information, explanations, or references to your document.
+
+
+% Vertical fill between pages
+\vspace*{\fill}
+\hrulefill
+\vspace*{\fill}
+
+\newpage 
+
+\tableofcontents
+\addcontentsline{toc}{section}{List of Tables}
+\addcontentsline{toc}{section}{List of Figures}
+
+\listoftables
+\listoffigures
+
+\end{document}
