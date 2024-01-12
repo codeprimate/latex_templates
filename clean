@@ -1,0 +1,3 @@
+#!/bin/bash
+
+rm *.aux *.lof *.log *.lot *.toc *.gz
